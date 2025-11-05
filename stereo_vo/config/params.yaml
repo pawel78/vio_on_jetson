@@ -1,0 +1,57 @@
+/**:
+  ros__parameters:
+    # IMU Configuration
+    use_imu: false
+    
+    # Camera Configuration
+    camera_driver: "argus"  # "argus" or "v4l2"
+    sensor_id_left: 0
+    sensor_id_right: 1
+    resolution: [1280, 720]
+    fps: 30
+    
+    # Feature Tracking
+    max_features: 1500
+    lk_levels: 3
+    lk_win_size: 21
+    min_track_quality: 0.01
+    min_track_lifetime: 3
+    
+    # Pose Estimation
+    ransac_reproj_thresh_px: 2.0
+    ransac_iterations: 100
+    ransac_confidence: 0.99
+    min_inliers: 20
+    use_ba: true
+    ba_iterations: 10
+    
+    # Sliding Window BA
+    ba_window_size: 7
+    min_observations: 3
+    use_robust_loss: true
+    huber_delta: 1.0
+    max_ba_iterations: 20
+    convergence_threshold: 0.0001
+    
+    # Stereo Matching
+    stereo_method: "sgbm"  # "sgbm" or "cuda_sgbm"
+    min_disparity: 0
+    num_disparities: 128
+    block_size: 7
+    p1: 8
+    p2: 32
+    disp12_max_diff: 1
+    uniqueness_ratio: 10
+    speckle_window_size: 100
+    speckle_range: 32
+    use_mode_HH: true
+    
+    # Visualization
+    publish_debug_images: true
+    
+    # Frame IDs
+    frame_id_odom: "odom"
+    frame_id_base: "base_link"
+    frame_id_left_cam: "left_camera_optical_frame"
+    frame_id_right_cam: "right_camera_optical_frame"
+    frame_id_imu: "imu_link"

@@ -1,0 +1,13 @@
+/**:
+  ros__parameters:
+    # V4L2 camera configuration
+    auto_discover: true
+    left_device: "/dev/video0"
+    right_device: "/dev/video1"
+    width: 1280
+    height: 720
+    fps: 30
+    
+    # Camera info URLs
+    left_camera_info_url: "file://$(find stereo_vo)/config/camera_left.yaml"
+    right_camera_info_url: "file://$(find stereo_vo)/config/camera_right.yaml"

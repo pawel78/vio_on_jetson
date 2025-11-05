@@ -1,0 +1,45 @@
+# LSM9DS0 IMU configuration
+
+/**:
+  ros__parameters:
+    # I2C Configuration
+    i2c_bus: 7
+    imu_addr_gyro: 0x6B
+    imu_addr_mag: 0x1D
+    
+    # Sample Rate
+    imu_rate_hz: 200
+    
+    # Mounting Orientation (RPY in degrees)
+    imu_orientation_rpy_deg: [0.0, 0.0, 0.0]
+    
+    # Calibration - Accelerometer Bias (m/s^2)
+    accel_bias_x: 0.0
+    accel_bias_y: 0.0
+    accel_bias_z: 0.0
+    
+    # Calibration - Gyroscope Bias (rad/s)
+    gyro_bias_x: 0.0
+    gyro_bias_y: 0.0
+    gyro_bias_z: 0.0
+    
+    # Calibration - Accelerometer Scale
+    accel_scale_x: 1.0
+    accel_scale_y: 1.0
+    accel_scale_z: 1.0
+    
+    # Calibration - Gyroscope Scale
+    gyro_scale_x: 1.0
+    gyro_scale_y: 1.0
+    gyro_scale_z: 1.0
+    
+    # Full Scale Ranges
+    accel_range_g: 2  # ±2g
+    gyro_range_dps: 245  # ±245 degrees/sec
+    
+    # Noise Parameters (for covariance)
+    accel_noise: 0.01
+    gyro_noise: 0.001
+    
+    # Frame ID
+    frame_id: "imu_link"
