@@ -14,6 +14,9 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <cv_bridge/cv_bridge.h>
 #include <image_transport/image_transport.hpp>
+#include <message_filters/subscriber.h>
+#include <message_filters/sync_policies/approximate_time.h>
+#include <message_filters/synchronizer.h>
 
 #include "core/feature_tracker.hpp"
 #include "core/stereo_matcher.hpp"
