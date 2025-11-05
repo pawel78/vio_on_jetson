@@ -1,0 +1,43 @@
+# Static TF transforms
+# Update these values based on your actual hardware mounting
+
+/**:
+  ros__parameters:
+    # Left camera to right camera transform
+    # Assuming horizontal stereo rig with 0.1m baseline
+    left_to_right:
+      translation:
+        x: 0.1
+        y: 0.0
+        z: 0.0
+      rotation:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 1.0
+    
+    # Base link to left camera transform
+    # Assuming camera is mounted 0.05m forward and 0.1m up from base
+    base_to_left_camera:
+      translation:
+        x: 0.05
+        y: 0.0
+        z: 0.1
+      rotation:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 1.0
+    
+    # Base link to IMU transform
+    # Assuming IMU is at base link origin
+    base_to_imu:
+      translation:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      rotation:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 1.0

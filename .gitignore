@@ -1,0 +1,47 @@
+# ROS 2 / Colcon build artifacts
+build/
+install/
+log/
+*.egg-info/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# C++
+*.o
+*.so
+*.a
+*.out
+*.exe
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Bags and data
+bags/
+*.bag
+*.db3
+artifacts/
+
+# Temporary files
+tmp/
+*.tmp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

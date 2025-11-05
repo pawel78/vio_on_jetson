@@ -1,0 +1,12 @@
+/**:
+  ros__parameters:
+    # Argus camera configuration for Arducam Camarray
+    sensor_id_left: 0
+    sensor_id_right: 1
+    width: 1280
+    height: 720
+    fps: 30
+    
+    # Camera info URLs (file:// paths to calibration files)
+    left_camera_info_url: "file://$(find stereo_vo)/config/camera_left.yaml"
+    right_camera_info_url: "file://$(find stereo_vo)/config/camera_right.yaml"
